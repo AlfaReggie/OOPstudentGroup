@@ -2,7 +2,7 @@ package main.java.ru.gb.oseminar.data;
 
 import java.time.LocalDate;
 
-public class User {
+public abstract class User {
     private String firstName;
     private String secondName;
     private String patronymic;
@@ -46,6 +46,8 @@ public class User {
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
+
+    public abstract int compareTo(Teacher o);
 
     @Override
     public String toString() {

@@ -1,5 +1,4 @@
-import main.java.ru.gb.oseminar.data.Student;
-import main.java.ru.gb.oseminar.data.StudentGroup;
+import main.java.ru.gb.oseminar.data.*;
 
 import java.time.LocalDate;
 import java.util.Iterator;
@@ -16,13 +15,34 @@ public class Main {
                 new Student(1 ,"a",
                 "a",
                 "a", LocalDate.now())));
-     Iterator<Student> studentIterator = students.iterator();
-     while (studentIterator.hasNext()){
-         System.out.println(studentIterator.next().toString());
-     }
-        System.out.println("////////////////////////////////////");
-     List<Student> list = students.getStudents().stream().sorted()
-             .collect(Collectors.toList());
+        Iterator<Student> studentIterator = students.iterator();
+        while (studentIterator.hasNext()){
+            System.out.println(studentIterator.next().toString());
+        }
+            System.out.println("////////////////////////////////////");
+        List<Student> list = students.getStudents().stream().sorted()
+                 .collect(Collectors.toList());
         System.out.println(list.toString());
+
+        TeachGroup teachers = new TeachGroup(List.of(new Teacher(3L, "String firstName",
+                        "String secondName",
+                        "String patronymic", LocalDate.now()), new Teacher(2L, "String firstName2",
+                        "String secondName",
+                        "String patronymic", LocalDate.now()), new Teacher(1L,"a",
+                        "a", "a", LocalDate.now())));
+
+        System.out.println("teachers");
+        System.out.println(teachers + "\n");
+
+        System.out.println("Iterator:");
+        TeachGroupIterator iterator = teachers.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next().toString());
+        }
+
+        System.out.println("Comparator:");
+        List<Teacher> listTeach = teachers.getTeachers().stream().sorted()
+                .collect(Collectors.toList());
+        System.out.println(listTeach.toString());
     }
 }

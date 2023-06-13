@@ -5,8 +5,6 @@ import java.time.LocalDate;
 public class Student extends User implements Comparable<Student>{
     private Long studentId;
 
-
-
     public Student(long studentId,String firstName, String secondName,
                    String patronymic, LocalDate dateOfBirth) {
         super(firstName, secondName, patronymic, dateOfBirth);
@@ -22,6 +20,10 @@ public class Student extends User implements Comparable<Student>{
     }
 
 
+    @Override
+    public int compareTo(Teacher o) {
+        return 0;
+    }
 
     @Override
     public String toString() {
