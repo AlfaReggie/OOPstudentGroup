@@ -1,4 +1,4 @@
-package main.java.ru.gb.oseminar.data;
+package data;
 
 import java.util.List;
 public class TeachGroup implements Iterable<Teacher>{

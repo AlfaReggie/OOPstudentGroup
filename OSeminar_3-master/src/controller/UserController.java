@@ -1,11 +1,11 @@
-package main.java.ru.gb.oseminar.controller;
+package controller;
 
-import main.java.ru.gb.oseminar.data.Student;
-import main.java.ru.gb.oseminar.data.Teacher;
-import main.java.ru.gb.oseminar.data.User;
-import main.java.ru.gb.oseminar.service.DataService;
-import main.java.ru.gb.oseminar.service.StudentGroupService;
-import main.java.ru.gb.oseminar.view.UserView;
+import data.Student;
+import data.Teacher;
+import data.User;
+import service.DataService;
+import service.StudentGroupService;
+import view.UserView;
 
 import java.time.LocalDate;
 import java.util.List;

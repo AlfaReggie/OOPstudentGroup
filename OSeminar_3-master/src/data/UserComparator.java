@@ -1,4 +1,4 @@
-package main.java.ru.gb.oseminar.data;
+package data;
 import java.util.Comparator;
 
 public class UserComparator<T extends User> implements Comparator<T> {

@@ -1,7 +1,8 @@
-package main.java.ru.gb.oseminar.service;
+package service;
 
-import main.java.ru.gb.oseminar.data.Student;
-import main.java.ru.gb.oseminar.data.User;
+import data.Student;
+import data.Teacher;
+import data.User;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -9,6 +10,9 @@ import java.util.List;
 
 public class DataService {
 
+    static Integer idGenerator;
+    List<Student> studentList;
+    Teacher teacher;
     private List<User> users;
 
     public DataService() {

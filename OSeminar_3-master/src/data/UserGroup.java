@@ -1,5 +1,4 @@
-package main.java.ru.gb.oseminar.data;
-import java.util.Iterator;
+package data;
 import java.util.List;
 
 public class UserGroup implements Iterable<User>{
