@@ -2,6 +2,9 @@ package data;
 
 import java.time.LocalDate;
 
+//Этот класс соответствует принципу открытости/закрытости.
+//Он открыт для расширения, но закрыт для модификации.
+
 public class Teacher extends User implements Comparable<Teacher>{
 
     private Long teacherId;

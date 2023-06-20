@@ -3,6 +3,11 @@ package data;
 import java.util.Iterator;
 import java.util.List;
 
+
+//Этот класс соответствует принципу единственной ответственности.
+//Для него определено единственное назначение
+//- итерировать объекты класса Student.
+
 public class StudentGroupIterator implements Iterator<Student> {
 
     private int counter;

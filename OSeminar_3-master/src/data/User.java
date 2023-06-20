@@ -2,7 +2,11 @@ package data;
 
 import java.time.LocalDate;
 
+//Этот класс соответствует принципу инверсий зависимостей.
+// От этого класса зависят Student и Teacher, а он от них не зависит.
+
 public abstract class User {
+
     private String firstName;
     private String secondName;
     private String patronymic;
